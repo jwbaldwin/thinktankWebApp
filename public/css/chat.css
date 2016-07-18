@@ -1,0 +1,83 @@
+#homeLink{
+	margin-right: 10px;
+}
+form #button { 
+	color:#2D9F0B; 
+	background: #FFF; 
+	border: none; 
+	padding: 10px;  
+	width: 9%; 
+	height: 60px;
+
+	transition: background .5s, color .5s;
+}
+
+form #button:hover {
+	background: #2D9f08;
+	color: #FFF;
+}
+#m {
+	color: #000000;
+	width: 85%;
+	height: 60px;
+	margin-top: 5px;
+	border-style: solid 1px #ccc;
+	resize: none;
+	bottom: 0;
+}
+
+#chatDiv {
+	position: relative;
+	height: 500px;
+	font-size: 14pt;
+	overflow-y: scroll;
+	border-width: 15px 15px 65px 15px;
+	border-style: solid;
+	border-color: #262626;
+
+}
+#form { 
+	padding-top: 5px;
+	position: absolute; 
+	bottom: 0; 
+	width: 100%; 
+}
+form input { 
+	position: relative;
+	background: #fff;
+	font-size: 20px;
+	border: none; 
+	border-left: 3px solid #FFF;
+	margin-bottom: 1px;
+	padding: 10px; 
+	width: 90%;
+	outline: none;
+
+	transition: border-left .5s;
+}
+form input:focus {
+	border-left: 3px solid #2D9F0B;
+}
+
+form #messages { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+}
+
+#messages li {
+	padding: 5px 10px; 
+	text-align: left;
+}
+#messages li:nth-child(odd) { 
+	background: #3F3F3F; 
+}
+#notifyUser { 
+	position: fixed; 
+	bottom: 42px; 
+	width: 100%; 
+}
+#middleCol {
+	padding-left: 0px;
+	padding-right: 0px;
+}

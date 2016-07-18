@@ -1,0 +1,43 @@
+<h3>Think a Thought</h3>
+<div id="thoughtSubmission" class="container-fluid">
+		<div class="input-group">
+			<div class="col-xs-10 col-md-10">
+				<textarea id="askBox" type="text" class="form-control" placeholder="Thought" ng-model="post.text"></textarea>
+			</div>
+			<div class="col-xs-2 col-md-2">
+			    <span class="input-group-btn">
+			        <button id="askBtn" class="btn btn-default" type="button" ng-click="submit()">Ask</button>
+			    </span>
+			 </div>
+		  </div>
+</div>
+<div id="askBoxCont" class="container-fluid">
+	<div class="row">
+		<div  ng-repeat="post in posts | orderBy: '-upvotes'" class="col-md-4">
+			<div id="post" class="thumbnail">{{post.text}}
+
+				<button id="upvoteBtn" class="btn button-default" type="button" ng-click="upvote(post._id)">
+					<span id="upvoteIcon" class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+				</button>
+
+				<span id="upvoteBadge" class="badge" aria-hidden="true">{{post.upvotes}}</span>
+
+				<button id="downvoteBtn" class="btn button-default" type="button" ng-click="downvote(post._id)">
+					<span id="downvoteIcon" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+				</button>
+
+				<button id="removeBtn" type="button" class="btn btn-default" title="Remove" ng-click="remove(post._id)">
+				  <span id="removeIcon" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</button>
+
+				<button id="commentBtn" type="button" class="btn btn-default" title="Comment">
+				  <a href="/#/comment/{{post._id}}"><span id="commentIcon" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+				</button>
+
+				<button id="chatBtn" type="button" class="btn btn-default" title="Live Chat">
+				  <a href="/#/chat/{{post._id}}"><span id="chatIcon" class="glyphicon glyphicon-flash" aria-hidden="true"></span></a>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

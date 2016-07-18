@@ -1,0 +1,81 @@
+#upvoteIcon, #downvoteIcon, #chatIcon, #removeIcon, #commentIcon {
+	color: #262626; 
+	border-radius: 2px;
+	transition: color .25s;
+}
+
+#upvoteBtn:active, #downvoteBtn:active, #removeBtn:active, #chatBtn:active, #commentBtn:active {
+	transform: translateY(2px);
+}
+#upvoteIcon:hover, #downvoteIcon:hover, #chatIcon:hover, #removeIcon:hover, #commentIcon:hover {
+	color: #BFBFBF;
+}
+
+.col-md-4 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#upvoteIcon, #upvoteBtn {
+	position: absolute;
+	padding: 1px;
+	right: 1px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	top: 1px;
+}
+#downvoteIcon, #downvoteBtn {
+	position: absolute;
+	padding: 1px;
+	right: 1px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	top: 13px;
+}
+
+#commentBtn, #commentIcon {
+	position: absolute;
+	padding: 1px;
+	right: 1px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	bottom: 2.5em;
+}
+
+#upvoteBadge {
+	position: absolute;
+	color: #000;
+	right: 0px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	top: 12px;
+}
+#removeBtn {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	padding: 0px 0px 0px 5px;
+}
+#chatBtn {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	padding: 0px 3px 0px 5px;
+}
+
+#post {
+	padding: 0px 18px 0px 18px;
+	margin: 0px 15px 15px 15px;
+	font-size: 14pt;
+	color: #000000;
+	border: 1px solid #474210;
+	background: #FFE980;
+	margin-top: 20px;
+	height: 120px;
+	overflow-y: scroll;
+	word-wrap: break-word;
+	position: relative;
+}

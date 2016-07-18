@@ -1,0 +1,28 @@
+<h3>Thinking About: </h3>
+<div id="post" class="thumbnail">{{post.text}}
+
+	<button id="upvoteBtn" class="btn button-default" type="button">
+		<span id="upvoteIcon" class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+	</button>
+
+	<span id="upvoteBadge" class="badge" aria-hidden="true">{{post.upvotes}}</span>
+
+	<button id="downvoteBtn" class="btn button-default" type="button">
+		<span id="downvoteIcon" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+	</button>
+
+	<button id="commentBtn" type="button" class="btn btn-default" title="Comments">
+	  <a href="/#/comment/{{post._id}}"><span id="commentIcon" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+	</button>
+
+</div>
+<div id="chatDiv" class="container-fluid">
+  <ul id="messages"></ul>
+  <span id="notifyUser"></span>
+ </div>
+<form id="form">
+	<input type="hidden" id="user" value="" />
+	<a id="homeLink" href="/#/"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+	<input id="m" autocomplete="off" ng-keypress="notifyTyping()" placeholder="Type your message here..." />
+	<input type="submit" id="button" value="Send" ng-click="submitFunction()"/>
+</form>

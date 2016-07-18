@@ -1,0 +1,111 @@
+#html, #rightCol, #leftCol, #container, #jumboheader {
+	background-color: #ccc
+}
+
+#container {
+	color: #FFFFFF;
+	padding-right: 0;
+	padding-left: 0;
+	height: 100%;
+}
+
+#navbar {
+	margin-bottom: 0px;
+	color: #010101;
+	background-color: #363636;
+	opacity: .8;
+}
+#jumboheader {
+	color: #6A6A6A;
+	margin-bottom: 0px;
+}
+
+#middleCol {
+	background: #4C4C4C;
+	text-align: center;
+	border-style: groove;
+	border-color: #4C4C4C;
+	height: 100%;
+	position: relative;
+	background-image: url('images/sharp_black.png');
+	opacity: .85;
+}
+.col-md-10 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#rightCol, #leftCol{
+	text-align: center;
+	height: 100%;
+	position: relative;
+}
+
+#askBtn{
+	color: #FFF;
+	background: #1F1F1F;
+	font-size: 14pt;
+	height: 60px;
+	width: 100%;
+	border: none;
+
+	transition: background .5s, color .5s;
+}
+
+#askBtn:hover {
+	background: #fff;
+	color: #1F1F1F;
+}
+#askBox {
+	font-size: 14pt;
+	width: 100%;
+	height: 60px;
+	resize: none;
+	outline: none;
+	border: 3px solid #FFF;
+
+	transition: border .5s;
+}
+
+#askBox:focus {
+	border: 3px solid #2D9F0B;
+}
+#askBoxCont {
+	height: 10px;
+}
+
+button:focus {
+	outline:0 !important;
+	background: 
+}
+
+#msgPrev{
+	color: #000000;
+	margin-bottom: 1px;
+	height: 150px;
+}
+
+#loginImg {
+	border: 5px inset #ccc;
+	margin-top: 143px;
+}
+
+#loginForm {
+	margin-top:35px;
+}
+
+#username, #password {
+	font-size: 14pt;
+    height: 60px;
+}
+#username {
+	border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#password {
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+
+

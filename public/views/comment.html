@@ -1,0 +1,17 @@
+<h3>Talking About: </h3>
+<div id="post" class="thumbnail">{{post.text}}
+
+	<button id="upvoteBtn" class="btn button-default" type="button">
+		<span id="upvoteIcon" class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+	</button>
+
+	<span id="upvoteBadge" class="badge" aria-hidden="true">{{post.upvotes}}</span>
+
+	<button id="downvoteBtn" class="btn button-default" type="button">
+		<span id="downvoteIcon" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+	</button>
+
+	<button id="chatBtn" type="button" class="btn btn-default" title="Live Chat">
+	  <a href="/#/chat/{{post._id}}"><span id="chatIcon" class="glyphicon glyphicon-flash" aria-hidden="true"></span></a>
+	</button>
+</div>
